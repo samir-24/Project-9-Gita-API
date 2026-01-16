@@ -1,0 +1,78 @@
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+:root {
+    --bs-primary: hsl(48deg 33.33% 97.06% / 80%) !important;
+}
+
+.bg-body-tertiary {
+    background-color: var(--bs-primary) !important;
+}
+
+a {
+    color: #333 !important;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.btn-warning {
+    border-radius: 8px;
+    font-weight: 500;
+    background: #c96442 !important;
+}
+
+.banner {   
+    position: relative;
+    height: 100vh;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 0;
+    background: #ffffff;
+    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0.11) 50%);
+}
+
+#chapterHeader h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Verses */
+#versesContent span {
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+#versesContent p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 6px;
+}
+
+/* Right sidebar */
+.sidebar {
+    position: sticky;
+    top: 90px;
+}
+
+/* Verse buttons grid */
+.verse-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.verse-grid button {
+    border: 1px solid #444;
+    background: white;
+    border-radius: 6px;
+    padding: 6px 0;
+    font-size: 14px;
+}

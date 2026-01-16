@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreemad Bhagvat Geeta - chapters</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-warning" href="index.html">Bhagavad Gita</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./chapters.html">Chapters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="btn btn-warning text-white px-3">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container my-5">
+            <div class="row g-5">
+
+                <!-- LEFT -->
+                <div class="col-md-8">
+                    <div id="chapterHeader" class="mb-4"></div>
+                    <div id="versesContent"></div>
+
+                    <div class="d-flex justify-content-between my-5">
+                        <button id="prevChapter" class="btn btn-outline-secondary">
+                            ← Previous Chapter
+                        </button>
+                        <button id="nextChapter" class="btn btn-warning text-white">
+                            Next Chapter →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDEBAR -->
+                <div class="col-md-4">
+                    <div class="sidebar">
+
+                        <img src="./assets/images/imgg.webp" class="img-fluid rounded mb-4" alt="Krishna">
+
+                        <h6 class="fw-bold mb-3">VERSES</h6>
+                        <div id="verseButtons" class="verse-grid"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <small>© 2026 Bhagavad Gita Project</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/chapter.js"></script>
+
+</body>
+
+</html>
